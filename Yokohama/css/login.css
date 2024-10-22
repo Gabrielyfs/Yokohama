@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-size: 45px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+input {
+    max-width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    background-color: #ffffff;
+}
+
+.label-float input {
+    width: 100%;
+    padding: 11.5px;
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    min-width: 350px;
+    font-size: 13px;
+    font-family: 'Poppins';
+    border-radius: 18px;
+}
+
+::placeholder {
+    padding-left: 15px;
+    color: #000000e0;
+}
+
+.label-float {
+    justify-content: center;
+    position: relative;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.fa-eye {
+    position: absolute;
+    top: 24px;
+    right: 5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button {
+    color: #ffffff;
+    font-family: 'Poppins';
+    background-color: #6D0302;
+    padding: 12px;
+    border-radius: 15px;
+    border: 0;
+    font-size: 13px;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    margin-top: 40px;
+    box-shadow: 2px 2px 2px #000000;
+}
+
+button:hover {
+    transition: all .3s ease-out;
+    background-color: #af1a17;
+}
+
+#pLogin {
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+a {
+    color: #DB0101;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #ff0000;
+}
+
+#logo {
+    max-height: 50px;
+    margin-top: 20px;
+    margin-left: 70px;
+    cursor: pointer;
+}
+
+.card{
+    padding: 30px;
+    padding-left: 30px;
+    padding-right: 50px;
+    background: rgba( 255, 255, 255, 0.05 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: all .5s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.489);
+    transform: scale(1.05);
+}
+
+.msg-erro {
+    display: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 12px;
+}

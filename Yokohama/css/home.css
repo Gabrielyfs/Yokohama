@@ -1,0 +1,408 @@
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0px;
+    color: #ffffff;
+}
+
+body {
+    background: url(../img/background.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: fixed;
+    font-family: 'poppins';
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+nav {
+    background: linear-gradient(90deg, #000000c1, #310000c1);
+    border-radius: 0 0 30px 30px;
+}
+
+.logoF {
+    height: 50px;
+    float: left;
+    margin-left: 10dvh;
+    margin-top: 1%;
+}
+
+.logoL {
+    font-size: 30px;
+    line-height: 80px;
+    font-weight: bold;
+}
+
+/* desktop */
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin-right: 50px;
+}
+
+nav a, label {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 30px;
+}
+
+nav li, a, ul {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: rgb(255, 0, 0);
+    transition: .5s all;
+}
+
+.menuList {
+    float: right;
+    margin-right: 10dvh;
+    margin-top: 14px;
+}
+
+/* mobile */
+.sidebar{
+    margin-right: 0;
+    /* top: 0;
+    right: 0; */
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background: linear-gradient(180deg, #000000d0, #310000d0);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: none;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+
+
+
+@media screen and (max-width:1180px){
+    .logoL {
+        line-height: 10dvh;
+    }
+    .menu-list {
+        display: flex;
+    }
+    .nav ul, li, a{
+        display: none;
+    }
+}
+
+
+/* slider principal */
+
+section .slider {
+ margin: 0 auto;
+ width: 100%;
+ height: auto;
+ padding: 0;
+ overflow: hidden;
+}
+
+.slider-content {
+    width: 600%;
+    height: auto;
+    display: flex;
+}
+
+.slider-content input, .img-mobile {
+    display: none;
+}
+
+.slide-box {
+    width: 16.6667%;
+    height: auto;
+    text-align: center;
+}
+
+.slide-box img {
+    width: 100%;
+}
+
+#radio1:checked ~ .primeiro {
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro {
+    margin-left: -16.6667%;
+}
+
+#radio3:checked ~ .primeiro {
+    margin-left: -33.3333%;
+}
+
+#radio4:checked ~ .primeiro {
+    margin-left: -50%;
+}
+
+#radio5:checked ~ .primeiro {
+    margin-left: -66.6667%;
+}
+
+#radio6:checked ~ .primeiro {
+    margin-left: -83.3333%;
+}
+
+@media screen and (max-width: 900px) {
+    .img-desktop{
+        display: none;
+    }
+    .img-mobile {
+        display: block;
+    }
+}
+
+
+/* promoções */
+
+.promocoes {
+    overflow: hidden;
+}
+
+.fotos {
+    display: flex;
+}
+
+.foto img {
+    height: 400px;
+    width: 450px;
+    border-radius: 20px;
+}
+
+/* .carrossel {
+    margin: 0 auto;
+    width: 400%;
+    height: auto; */
+    /* overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 100dvh;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+}
+
+.slide img {
+    width: 100%;
+} */
+
+
+/* .manual-navigation {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-bnt {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-bnt:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-bnt:hover {
+    background-color: #fff;
+} */
+/* 
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -75%;
+}
+
+#radio5:checked ~ .first {
+    margin-left: -100%;
+} */
+
+/* .navigation-auto div {
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+} */
+
+/* #radio1:checked ~ .navigation-auto .auto-bnt1 {
+    background-color: #fff;
+}
+#radio2:checked ~ .navigation-auto .auto-bnt2 {
+    background-color: #fff;
+}
+#radio3:checked ~ .navigation-auto .auto-bnt3 {
+    background-color: #fff;
+}
+#radio4:checked ~ .navigation-auto .auto-bnt4 {
+    background-color: #fff;
+}
+#radio5:checked ~ .navigation-auto .auto-bnt5 {
+    background-color: #fff;
+} */
+
+/* footer */
+
+footer {
+    background: #000;
+    padding: 9dvh;
+    margin-top: 5%;
+}
+
+footer h1 {
+    font-size: 4dvh;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.foot-logos {
+    line-height: 7.2dvh;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 9dvh;
+    padding-top: 7dvh;
+}
+
+footer .logo {
+    height: 7dvh;
+    float: left;
+}
+
+.info{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2.1dvh;
+    font-family: 'poppins';
+}
+
+.copyright {
+    font-size: 2dvh;
+    display: flex;
+    justify-content: center;
+    padding-top: 3dvh;
+    color: #ffffffaa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bi {
+    cursor: pointer;
+}
+
+.bi-icon {
+    padding-right: 7dvh;
+}
+
+.media-icons {
+    display: flex;
+    justify-content: center;
+}
+
+/* .eventos .foto {
+    height: 500px;
+    object-fit: cover;
+    margin-left: 3%;
+    align-self: center;
+    
+}
+
+.eventos button {
+    padding: 10px;
+    border-radius: 15px;
+    background: #dc3232;
+}
+
+.eventos  {
+    margin-top: 5%;
+    margin-bottom: 6%;
+    background:#230505;
+    height: 640px;
+    display: flex;
+    border: #600d0d 2px solid;
+}
+
+.foto-info {
+    max-width: 500px;
+    padding-left: 15dvh;
+    text-align: justify;
+}
+
+#verMais {
+    text-transform: uppercase;
+    background: none;
+    font-size: 17px;
+    padding: 12px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    transition: all .5s;
+}
+
+#verMais:hover {
+    background: #ffffff;
+    color: #000000;
+    box-shadow: -10px 10px 10px #ffffff69;
+} */

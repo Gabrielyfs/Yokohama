@@ -1,0 +1,30 @@
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0px;
+    font-family: 'poppins';
+}
+
+body {
+    background: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#logo {
+    max-height: 50px;
+    margin-top: 20px;
+    margin-left: 70px;
+    cursor: pointer;
+    display: flex;
+}
+
+label{
+    color: #ffff;
+}

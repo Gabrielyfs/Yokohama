@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/reserva.css">
+    <title>Yokohama</title>
+</head>
+
+<body>
+    <div id="topo">
+        <img id="logo"
+            src="../img/logo.png">
+        <h1>RESERVAR MESA</h1>
+    </div>
+    <form class="container">
+        <div id="local">
+            <select name="local" id="local">
+                <option value="vazio" selected>LOCALIZAÇÃO</option>
+                <option value="SP">Pinheiros, São Paulo</option>
+                <option value="SP">Barueri, São Paulo</option>
+                <option value="SP">Leblon, Rio de Janeiro</option>
+                <option value="SP">Salvador, Bahia</option>
+            </select>
+        </div>
+        <div id="mesa">
+            <select name="mesa" id="mesa">
+                <option value="vazio" selected>CAPACIDADE DA MESA</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="6">6</option>
+                <option value="8">8</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+        <div id="pagamento">
+            <select name="pagamento" id="pagamento">
+                <option value="vazio" selected>FORMA DE PAGAMENTO</option>
+                <option value="pix">PIX</option>
+                <option value="cre">Crédito</option>
+                <option value="deb">Débito</option>
+                <option value="din">Dinheiro</option>
+            </select>
+        </div>
+    </form>
+</body>
+
+</html>
