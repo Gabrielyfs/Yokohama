@@ -15,10 +15,6 @@ function proximaImg() {
 
 }
 
-const menuList = document.querySelector('.menuList')
-
-menuList.addEventListener('click', () => {
-    const sidebar = document.querySelector('.sidebar')
-    sidebar.style.display = 'flex'
-})
-
+function pagSobre() {
+    window.location.href = '../html/sobre.html'
+}
