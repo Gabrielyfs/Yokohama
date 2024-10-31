@@ -1,3 +1,5 @@
+const logo = document.getElementById('logo')
+
 let eyeSenha = document.querySelector('.eye-senha')
 let eyeConf = document.querySelector('.eye-conf')
 
@@ -75,3 +77,7 @@ function cadastrar() {
         preErro.style.display = 'block'
     }
 }
+
+logo.addEventListener('click', () => {
+    window.location.href = '../html/home.html'
+})

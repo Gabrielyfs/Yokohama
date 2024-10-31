@@ -19,7 +19,9 @@ body {
 .container {
     display: flex;
     justify-content: center;
-    max-width: 100%;
+    align-items: center;
+    min-height: 100vh;
+
 }
 
 h1 {
@@ -93,6 +95,8 @@ button:hover {
     margin-top: 20px;
     margin-left: 70px;
     cursor: pointer;
+    float: left;
+    position: absolute;
 }
 
 .card{

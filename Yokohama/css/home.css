@@ -23,7 +23,7 @@ body {
     top: auto;
     font-family: 'poppins';
     width: 100%;
-    height: 100%;
+    height: auto;
     z-index: 1000;
 }
 
@@ -84,6 +84,7 @@ section .slider {
     height: auto;
     padding: 0;
     overflow: hidden;
+    position: relative;
 }
 
 .slider-content {
@@ -101,10 +102,12 @@ section .slider {
 .slide-box {
     width: 16.6667%;
     height: auto;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .slide-box img {
+    filter: brightness(66%);
     width: 100%;
 }
 
@@ -140,6 +143,25 @@ section .slider {
     .img-mobile {
         display: block;
     }
+}
+
+/* slider frases */
+
+.slider-info {
+    display: flex;
+    width: auto;
+}
+
+.slider-titulo {
+    position: absolute;
+    top: 45%;
+    font-size: 12dvh;
+}
+
+.slider-sub {
+    position: absolute;
+    top: 65%;
+    font-size: 4dvh;
 }
 
 
@@ -271,6 +293,10 @@ section .slider {
     height: auto;
 }
 
+.info-chefe {
+    width: 60dvh;
+}
+
 .chefe-img {
     width: 100%;
     height: auto;
@@ -282,23 +308,19 @@ section .slider {
 .bnt-chefe {
     position: absolute;
     color: #fff;
-    left: 20dvh;
-    width: 60dvh;
+    left: 25dvh;
 }
 
 .chefe-titulo {
     top: 15%;
     font-family: 'poppins';
     font-size: 10dvh;
-    width: 40dvh;
-    color: #e1e1e1;
+    color: #ffffff;
     border: none;
     background: none;
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
     transition-property: color;
-    display: flex;
-    justify-content: center;
   }
   
 .chefe-titulo:focus,
@@ -336,6 +358,8 @@ section .slider {
 
 .bnt-chefe {
     top: 70%;
+    display: flex;
+    justify-content: center;
 }
 
 .bnt-chefe button{
@@ -350,7 +374,8 @@ section .slider {
     cursor: pointer;
     transition: 0.4s;
     color: #000;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .bnt-chefe button:hover {
@@ -367,7 +392,7 @@ section .slider {
 /* footer */
 
 footer {
-    background: #000;
+background: #000;
     padding: 9dvh;
     margin-top: 5%;
     z-index: 1;
@@ -420,49 +445,3 @@ footer .logo {
     display: flex;
     justify-content: center;
 }
-
-/* .eventos .foto {
-    height: 500px;
-    object-fit: cover;
-    margin-left: 3%;
-    align-self: center;
-    
-}
-
-.eventos button {
-    padding: 10px;
-    border-radius: 15px;
-    background: #dc3232;
-}
-
-.eventos  {
-    margin-top: 5%;
-    margin-bottom: 6%;
-    background:#230505;
-    height: 640px;
-    display: flex;
-    border: #600d0d 2px solid;
-}
-
-.foto-info {
-    max-width: 500px;
-    padding-left: 15dvh;
-    text-align: justify;
-}
-
-#verMais {
-    text-transform: uppercase;
-    background: none;
-    font-size: 17px;
-    padding: 12px 40px;
-    border-radius: 10px;
-    cursor: pointer;
-    border: 2px solid #ffffff;
-    transition: all .5s;
-}
-
-#verMais:hover {
-    background: #ffffff;
-    color: #000000;
-    box-shadow: -10px 10px 10px #ffffff69;
-} */

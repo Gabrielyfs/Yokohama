@@ -7,6 +7,7 @@
 * {
     padding: 0;
     margin: 0px;
+    color: #ffffff;
     font-family: 'poppins';
 }
 
@@ -15,16 +16,68 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
-#logo {
-    max-height: 50px;
-    margin-top: 20px;
-    margin-left: 70px;
+body h1 {
+    top: 100px;
+}
+
+.navbar {
+    box-sizing: border-box;
+    justify-content: center;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    background: linear-gradient(90deg, #000000c1, #310000c1);
+    border-radius: 0 0 30px 30px;
+}
+
+.logos {
     cursor: pointer;
-    display: flex;
 }
 
-label{
-    color: #ffff;
+.logoF {
+    height: 50px;
+    float: left;
+    margin-left: 80px;
+    margin-top: 1%;
+}
+
+.logoL {
+    font-size: 30px;
+    line-height: 80px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin-right: 50px;
+}
+
+nav a,
+label {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 30px;
+}
+
+nav li,
+a,
+ul {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: rgb(255, 0, 0);
+    transition: .5s all;
 }

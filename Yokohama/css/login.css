@@ -8,6 +8,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .poppins-medium {
@@ -19,7 +22,8 @@ body {
 .container {
     display: flex;
     justify-content: center;
-    max-width: 100%;
+    align-items: center;
+    min-height: 100vh;
 }
 
 h1 {
@@ -111,6 +115,8 @@ a:hover {
     margin-top: 20px;
     margin-left: 70px;
     cursor: pointer;
+    float: left;
+    position: absolute;
 }
 
 .card{
