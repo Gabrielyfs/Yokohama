@@ -111,6 +111,7 @@ section .slider {
     width: 100%;
 }
 
+
 #radio1:checked~.primeiro {
     margin-left: 0%;
 }
@@ -154,7 +155,7 @@ section .slider {
 
 .slider-titulo {
     position: absolute;
-    top: 45%;
+    top: 42%;
     font-size: 12dvh;
 }
 
@@ -162,6 +163,23 @@ section .slider {
     position: absolute;
     top: 65%;
     font-size: 4dvh;
+}
+
+.slider-titulo, .slider-sub {
+    animation: sliderReveal 1.5s ease forwards;
+}
+
+
+@keyframes sliderReveal {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 
@@ -321,19 +339,14 @@ section .slider {
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
     transition-property: color;
-  }
-  
-.chefe-titulo:focus,
-.chefe-titulo:hover {
-    color: #fff;
-  }
-  
+}
+
 .chefe-titulo:focus:after,
 .chefe-titulo:hover:after {
     width: 100%;
     left: 0%;
-  }
-  
+}
+
 .chefe-titulo:after {
     content: "";
     pointer-events: none;
@@ -346,7 +359,7 @@ section .slider {
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
     transition-property: width, left;
-  }
+}
 
 
 
@@ -362,7 +375,7 @@ section .slider {
     justify-content: center;
 }
 
-.bnt-chefe button{
+.bnt-chefe button {
     padding-left: 33px;
     padding-right: 33px;
     padding-bottom: 16px;
@@ -392,7 +405,7 @@ section .slider {
 /* footer */
 
 footer {
-background: #000;
+    background: #000;
     padding: 9dvh;
     margin-top: 5%;
     z-index: 1;
