@@ -71,65 +71,63 @@ nav a:hover {
     transition: .5s all;
 }
 
-.flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    perspective: 1000px; /* remover para nao ter o efeito 3d */
-    /* display: flex; */
-    float: left;
-    justify-content: center;
-  }
-  
-  /*container necessario para frente e atrás do card */
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
-    /* display: flex; */
-    
-  }
-  
-  /* hover */
-  .flip-card:hover .flip-card-inner{
-    transform: rotateY(180deg);
-  }
-  
-  /* posição frente e atras*/
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-  
-  /* estilo frente (caso a imagem esteja perdida) */
-  .flip-card-front {
-    /* background-color: #bbb; */
-    color: black;
-  }
-  
-  /* estilo atras */
-  .flip-card-back {
-    background-color: transparent;
-    color: white;
-    transform: rotateY(180deg);
-    height: 230px;
-    
-  }
-
-  /* h1 */
-.flip-card-back h1 {
-  font-family: "poppins", sans-serif;
-  margin-top: 100px;
-}
 
 #atual {
   color: rgb(255, 0, 0);
 }
+
+body{
+  display: flex;
+  justify-content: center;
+}
+.main{
+  display: flex;
+}
+.card{
+  height: 230px;
+  width: 230px;
+  /* efeito 3d (quanto menor for um valor, o efeito sera mais intenso) */
+  perspective: 1000px;
+  margin: 30px;
+  margin-top: 100px;
+  margin-left: 55px;
+}
+.container{
+  height: 100%;
+  width: 100%;
+  transition: transform 1.5s;
+  /* os filhos do elemento serao posicionados no espaço 3d */
+  transform-style: preserve-3d;
+}
+
+.card:hover .container {
+  /* girar um elemento em 180 graus em torno de um eixo */
+  transform: rotateY(180deg);
+}
+
+.front , .back {
+  height: 100%;
+  width: 100%;
+  /* posiciona um elemento de forma absoluta(em qualquer parte) na tela*/
+  position: absolute;
+  /* oculta a parte de tras de um elemento*/
+  backface-visibility: hidden;
+}
+.back {
+ transform: rotateY(180deg);
+ background-color: rgb(54, 7, 7);
+ color: white;
+ text-align: center;
+ border-radius: 15px;
+ cursor: pointer;
+}
+h1 {
+  margin-top: 90px;
+
+}
+img{
+  border-radius: 15px ;
+}
+
+
 

@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="../css/reserva.css">
     <title>Reserva</title>
 </head>
-
 <body>
     <div class="container">
 
@@ -42,6 +41,77 @@
                 </ul>
             </nav>
         </div>
-</body>
+        
+        <div>
+            <div id="inicial">
+                <h2>Sabores e tradições que transportam você ao Japão</h2>
+                <br>
+            </div>
+            
+            <div id="reservar">
+                
+                <div>
+                    <h1>Reservar </h1>
+                </div>
+                
+                <div class="form-control">
+                    <label for="restaurantes">Restaurantes: </label>
+                    <select name="restaurante">
+                    <option selected value="alphaville">Alphaville-SP</option>
+                    <option value="salvador">Salvador-BA</option>
+                    <option value="leblon">Leblon-RJ</option>
+                    <option value="pinheiros">Pinheiros-SP</option>
+                    <option value="curitiba">Curitiba-PR</option>
+                    <option value="ipanema">Ipanema-RJ</option>
+                </select>
+                </div>
 
-</html>
+                    <form>
+                        <label for="data">Data: </label>
+                        <input type="date" id="data">
+                    </form>
+                    
+                <div>
+                    <form>
+                        <label for="hora">Hora: </label>
+                        <input type="time" id="hora">
+                        <input type="submit" value="Reservar">
+                    </form>
+                </div>
+            </div>
+            
+            <div id="mesa">
+                <h1>Nossas mesas</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum dolore facilis veniam in maiores! Sit iusto quas totam nisi ad commodi.</p>
+                <div class="mesa-imagem">
+                    <div class="mesas">
+                        <img src="/img/mesa2.png" alt="">
+                        <h4>Mesa para duas pessoas</h4>
+                        <h6>Lorem ipsum dolor sit</h6>
+                    </div>
+                    
+                    <div class="mesas">
+                        <img src="/img/mesa4.png" alt="">
+                        <h4>Mesa para quatro pessoas</h4>
+                        <h6>Lorem ipsum dolor sit</h6>
+                    </div>
+                    
+                    <div class="mesas">
+                        <img src="/img/mesa6.png" alt="">
+                        <h4>Mesa para 6 pessoas</h4>
+                        <h6>Lorem ipsum dolor sit</h6>
+                    </div>
+                    
+                    <div class="mesas">
+                        <img src="/img/mesa10.png" alt="">
+                        <h4>Mesa para 10 pessoas</h4>
+                        <h6>Lorem ipsum dolor sit</h6>
+                    </div>
+                </div>
+            </div>
+
+
+            <script src="../js/reserva.js"></script>
+
+        </body>
+    </html>

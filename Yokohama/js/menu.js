@@ -1,11 +1,15 @@
 const logoL = document.querySelector('.logoL')
-const logos = document.querySelector('.logos')
+const logoF = document.querySelector('.logoF')
 
 logoL.addEventListener('click', () => {
     window.location.href = '../html/home.html'
 });
-logos.addEventListener('click', () => {
+logoF.addEventListener('click', () => {
     window.location.href = '../html/home.html'
 });
 
+const back = document.querySelector('.back');
 
+back.addEventListener('click', () => {
+    window.location.href = '../html/menu-rodizio.html'
+})

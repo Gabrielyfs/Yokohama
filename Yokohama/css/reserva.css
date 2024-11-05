@@ -6,9 +6,10 @@
 
 * {
     padding: 0;
-    margin: 0px;
+    margin: 0;
     color: #ffffff;
     font-family: 'poppins';
+    box-sizing: border-box;
 }
 
 body {
@@ -24,9 +25,11 @@ body h1 {
 }
 
 .navbar {
-    box-sizing: border-box;
-    justify-content: center;
+    position: absolute;
+    top: auto;
+    font-family: 'poppins';
     width: 100%;
+    height: auto;
     z-index: 1000;
 }
 
@@ -70,9 +73,7 @@ nav ul li {
     margin: 0 30px;
 }
 
-nav li,
-a,
-ul {
+nav li, a, ul {
     font-size: 16px;
     text-transform: uppercase;
 }
@@ -83,5 +84,156 @@ nav a:hover {
 }
 
 #atual {
-    color: rgb(255, 0, 0);
+    color:  rgb(255, 0, 0);
+}
+
+
+body {
+    background: url(../img/background.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    width: 99vw;
+    min-width: 100px;
+    text-align: center;
+    font-family: 'Poppins';
+}
+.poppins-light {
+    font-family: "Poppins";
+    font-weight: 300;
+    font-style: normal;
+  }
+
+#inicial {
+    background: url(../img/mesa.png) no-repeat bottom;
+    background-size: cover;
+    height: 100vh;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#inicial img {
+    opacity: 1.0;
+}
+
+#inicial h2 {
+    font-size: 52px;
+    margin: 2%;
+}
+
+
+#reservar {
+    background: #840b13;
+    color: white;
+    width: 90%;
+    height: 110px;
+    border-radius:10px;
+    margin: -7.5vh auto 0vh;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    border: none;
+    font-size: 20px;
+}
+
+#reservar div {
+    width: 27%;
+}
+
+#reservar input[type="time"] {
+    width: 26%;
+    border-radius:8px;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+#reservar input[type="date"] {
+    width: 69%;
+    border-radius:8px; 
+    font-size: 20px;
+    text-align: center;
+    border: none;
+}
+
+#label, select {
+    color: black;
+}
+.form-control {
+    padding: 20px;
+    margin-bottom: 4px;
+}
+
+#reservar input[type="submit"] {
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 16px;
+    color: white;
+    text-align: left;
+}
+
+#reservar h1 {
+    font-size: 23px;
+    text-transform: uppercase;  
+}
+
+
+#mesa {
+    height: 300px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#mesa .mesa-imagem {
+    display: flex;
+    height: 190px;
+}
+
+.mesas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 1%;
+    width: 290px;
+}
+
+.mesas h6, h4, h1 {
+    font-weight: 400;
+}
+
+.mesas h4 {
+    font-size: 20px;
+}
+
+.mesas h5 {
+    font-size: 13px;
+}
+
+.mesas img {
+    border-radius: 10px;
+    transition: 0.4s;
+}   
+
+.mesas img:hover {
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+label {
+    color: #FFF;
+}
+
+input {
+    color: rgb(15, 7, 7)
+   
 }

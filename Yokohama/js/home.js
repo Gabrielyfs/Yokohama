@@ -21,14 +21,14 @@ function proximaImg() {
 function resetAnimation() {
     let animatedElements = document.querySelectorAll('.slider-titulo, .slider-sub');
 
-     // Remova e adicione a classe de animação para reiniciar
+    // Remova e adicione a classe de animação para reiniciar
     animatedElements.forEach(element => {
         // Remova qualquer animação em andamento
         element.style.animation = 'none';
-        
+
         // Forçar reflow para garantir que a animação seja reiniciada
         element.offsetHeight;
-        
+
         // Adicione a animação novamente
         element.style.animation = 'sliderReveal 1.5s ease forwards';
     });
@@ -37,3 +37,23 @@ function resetAnimation() {
 function pagSobre() {
     window.location.href = '../html/sobre.html'
 }
+
+function agendar() {
+    window.location.href = '../html/reserva.html'
+}
+
+const instagram = document.querySelector('.bi-instagram')
+const whatsapp = document.querySelector('.bi-facebook')
+const facebook = document.querySelector('.bi-whatsapp')
+
+instagram.addEventListener('click', () => {
+    window.location.href = 'https://www.instagram.com/'
+})
+
+whatsapp.addEventListener('click', () => {
+    window.location.href = ''
+})
+
+facebook.addEventListener('click', () => {
+    window.location.href = ''
+})
