@@ -81,3 +81,7 @@ nav a:hover {
     color: rgb(255, 0, 0);
     transition: .5s all;
 }
+
+#atual {
+    color: rgb(255, 0, 0);
+}

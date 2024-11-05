@@ -165,7 +165,8 @@ section .slider {
     font-size: 4dvh;
 }
 
-.slider-titulo, .slider-sub {
+.slider-titulo,
+.slider-sub {
     animation: sliderReveal 1.5s ease forwards;
 }
 
@@ -334,14 +335,16 @@ section .slider {
     font-family: 'poppins';
     font-size: 10dvh;
     color: #ffffff;
-    border: none;
+    text-decoration: underline 3px solid;
+    text-underline-position: under;
+    /* border: none;
     background: none;
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
-    transition-property: color;
+    transition-property: color; */
 }
 
-.chefe-titulo:focus:after,
+/* .chefe-titulo:focus:after,
 .chefe-titulo:hover:after {
     width: 100%;
     left: 0%;
@@ -359,8 +362,7 @@ section .slider {
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 400ms;
     transition-property: width, left;
-}
-
+} */
 
 
 .chefe-nome {

@@ -82,6 +82,10 @@ nav a:hover {
     transition: .5s all;
 }
 
+#atual {
+    color: rgb(255, 0, 0);
+}
+
 .titulo-restaurante {
     display: flex;
     justify-content: center;
