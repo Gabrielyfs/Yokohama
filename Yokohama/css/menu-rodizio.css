@@ -95,7 +95,7 @@ nav a:hover {
     width: 1200px;
     margin: 100px auto;
 }
-
+/* title */
 .title {
     text-align: center;
     margin-bottom: 60px;
@@ -126,6 +126,8 @@ nav a:hover {
     /* centralizar um elemento dentro do seu contêiner pai*/
     transform: translateX(-50%);
 }
+
+/* menu */
 
 .menu {
     display: flex;
@@ -167,7 +169,6 @@ nav a:hover {
     border-radius: 50%;
     border: 1px solid rgb(54, 53, 53);
     padding: 3px;
-    /* transition: .5s; */
     width: 200px;
     height: 200px;
 }

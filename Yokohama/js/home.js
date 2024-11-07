@@ -42,18 +42,3 @@ function agendar() {
     window.location.href = '../html/reserva.html'
 }
 
-const instagram = document.querySelector('.bi-instagram')
-const whatsapp = document.querySelector('.bi-facebook')
-const facebook = document.querySelector('.bi-whatsapp')
-
-instagram.addEventListener('click', () => {
-    window.location.href = 'https://www.instagram.com/'
-})
-
-whatsapp.addEventListener('click', () => {
-    window.location.href = ''
-})
-
-facebook.addEventListener('click', () => {
-    window.location.href = ''
-})

@@ -91,7 +91,7 @@ section .slider {
     width: 600%;
     height: auto;
     display: flex;
-    margin-bottom: 7%;
+    margin-bottom: 12%;
 }
 
 .slider-content input,
@@ -110,6 +110,30 @@ section .slider {
     filter: brightness(66%);
     width: 100%;
 }
+/* 
+.nav-manual, .nav-auto {
+    position: absolute;
+    width: 100%;
+    margin-top: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn .nav-auto div {
+    border: 1px solid rgb(226, 119, 119);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child) {
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover {
+    background-color: #000;
+} */
 
 
 #radio1:checked~.primeiro {

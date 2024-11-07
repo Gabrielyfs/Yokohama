@@ -89,7 +89,7 @@ nav a:hover {
 }
 .info-delivery {
     padding-top: 120px;
-    background: rgba(78, 24, 15, 0.685);
+    background: rgba(78, 24, 15, 0.5);
     height: 530px;
     width: 1300px;
     text-align: center;
@@ -98,7 +98,7 @@ nav a:hover {
     text-transform: uppercase;
     font-size: 15dvh;
     font-weight: 50px;
-    color: rgb(134, 111, 111)
+    color: rgb(246, 29, 29)
     
 }
 .subtitulo {
@@ -108,21 +108,29 @@ nav a:hover {
     font-size: 4dvh;
 }
 .btn {
-  margin: 15px;
-  border-radius: 10px;
+  margin-right: 20px;
+  border-radius: 15px;
   align-items: center;
-  background: #ffffff;
+  background: rgb(211, 207, 207);
   padding: 8px;
   width: 120px;
+  
 }
 .detalhes {
     padding-top: 30px;
-    color: rgb(216, 212, 211);
+    color: rgb(173, 170, 169);
     font-size: 2.8dvh;
 }
 .img-btn {
   margin-top: 3px; 
 }
+.ifood {
+    padding-top: 3px;
+}
+.rappi {
+    padding-top: 1px;
+}
+
 
 
 
@@ -145,6 +153,10 @@ footer h1 {
     justify-content: center;
     padding-bottom: 9dvh;
     padding-top: 7dvh;
+}
+.foot-logos a {
+    text-decoration: none;
+
 }
 
 footer .logo {
