@@ -96,30 +96,30 @@ nav a:hover {
     margin: 100px auto;
 }
 /* title */
-.title {
+.title{
     text-align: center;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
 }
-
-.title h4 {
+.title h4{
     text-transform: capitalize;
     font-size: 36px;
     position: relative;
     display: inline-block;
     padding-bottom: 10px;
     color: white;
-    /* todas as letras maiusculas */
+    margin-top: 100px;
+    margin-left: 550px;
     text-transform: uppercase;
-}
 
+}
 /* ::before -> inserir conteudo antes ou depois de um elemento*/
-.title h4::before {
+.title h4::before{
     position: absolute;
     /* definir o conteudo de um elemento */
-    content: "";
+    content:"";
     width: 100px;
     height: 2px;
-    background-color: rgb(88, 20, 20);
+    background-color: rgb(128, 2, 2);
     bottom: 0;
     /* posição horizontal do elemento em relação a borda esquerda */
     left: 50%;
@@ -141,7 +141,7 @@ nav a:hover {
     /* define o tamanho inicial dos elementos */
     flex-basis: 580px;
     margin: bottom 40px;
-    margin-top: 30px;
+    margin-top: 25px;
     padding-bottom: 40px;
     border-bottom: 1px solid rgb(63, 62, 62);
     
