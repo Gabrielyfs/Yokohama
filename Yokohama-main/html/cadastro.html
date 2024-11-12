@@ -19,7 +19,7 @@
 
     <img id="logo" src="../img/logo.png">
 
-<form>
+<form action="/cadastro" method="post">
     <div class="container">
 
         
@@ -27,11 +27,11 @@
             <h1>CADASTRO</h1>
 
             <div class="label-float 1">
-                <input type="email" id="email" placeholder="EMAIL" oninput="email()" required>
+                <input type="email" id="email" placeholder="EMAIL" name="email" oninput="email()" required>
                 <p id="email-erro" class="msg-erro">Insira um email válido</p>
             </div>
             <div class="label-float 2">
-                <input type="password" id="senha" placeholder="SENHA" oninput="senha()" required>
+                <input type="password" id="senha" placeholder="SENHA" name="senha" oninput="senha()" required>
                 <i class="fa fa-eye eye-senha" aria-hidden="true"></i>
                 <p id="senha-erro" class="msg-erro">Insira no mínimo 5 caracteres</p>
             </div>

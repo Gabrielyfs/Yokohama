@@ -39,8 +39,35 @@ server.post('/cadastro', (req, res)=> {
     db.query(sql, [email, senha], (error, results) => {
         if (error) {
             console.log("Erro ao cadastrar.")
+            console.log(error)
         } else {
             console.log("Cadastro feito com sucesso!")
+            console.log(results)
+        }
+    })
+    
+    res.redirect('/')
+});
+
+server.get('/login', (req, res)=> {
+    res.sendFile(path.join(__dirname, './html/login.html'))
+});
+
+server.post('/login', (req, res)=> {
+    res.sendFile(path.join(__dirname, './html/login.html'))
+
+    console.log(req.body);
+
+    const {email, senha} = req.body
+
+    const sql = 'SELECT * FROM clientes WHERE email = ? AND senha = ?'
+
+    db.query(sql, [email, senha], (error, results) => {
+        if (error) {
+            console.log("Erro ao logar.")
+            console.log(error)
+        } else {
+            console.log("Login feito com sucesso!")
             console.log(results)
         }
     })
