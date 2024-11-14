@@ -110,30 +110,6 @@ section .slider {
     filter: brightness(66%);
     width: 100%;
 }
-/* 
-.nav-manual, .nav-auto {
-    position: absolute;
-    width: 100%;
-    margin-top: 35%;
-    display: flex;
-    justify-content: center;
-}
-
-.nav-manual .manual-btn .nav-auto div {
-    border: 1px solid rgb(226, 119, 119);
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child) {
-    margin-right: 10px;
-}
-
-.nav-manual .manual-btn:hover {
-    background-color: #000;
-} */
 
 
 #radio1:checked~.primeiro {
@@ -362,6 +338,7 @@ footer h1 {
     font-size: 4dvh;
     font-weight: bold;
     text-transform: uppercase;
+    color: #ffffff;
 }
 
 .foot-logos {
@@ -382,6 +359,7 @@ footer .logo {
     justify-content: space-evenly;
     font-size: 2.1dvh;
     font-family: 'poppins';
+    color: #ffffff;
 }
 
 .copyright {

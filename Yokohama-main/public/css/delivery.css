@@ -80,56 +80,66 @@ nav a:hover {
 #atual {
     color: rgb(255, 0, 0);
 }
-.delivery {
-    padding-top: 100px;
-}
+
 .card {
     display: flex;
     justify-content: center;
+    align-items: center;
+    background: rgba(78, 24, 15, 0.5);
+    width: 100%;
+    height: 110dvh;
 }
 .info-delivery {
-    padding-top: 120px;
-    background: rgba(78, 24, 15, 0.5);
-    height: 530px;
-    width: 1300px;
     text-align: center;
 }
+
 .titulo {
     text-transform: uppercase;
     font-size: 15dvh;
-    font-weight: 50px;
-    color: rgb(246, 29, 29)
-    
+    color: rgb(246, 29, 29);
+    padding-bottom: 6%;
 }
+
 .subtitulo {
-    color: rgb(216, 212, 211);
-    padding-top: 10px;
-    padding-bottom: 30px;
+    color: rgb(255, 255, 255);
+    padding-bottom: 6%;
     font-size: 4dvh;
 }
+
 .btn {
-  margin-right: 20px;
   border-radius: 15px;
-  align-items: center;
   background: rgb(211, 207, 207);
-  padding: 8px;
   width: 120px;
+  background-color: #ffffff;
+  margin-bottom: 5%;
+  /* height: 100px; */
   
 }
+
+.botoes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .detalhes {
-    padding-top: 30px;
-    color: rgb(173, 170, 169);
+    color: rgb(226, 222, 221);
     font-size: 2.8dvh;
 }
-.img-btn {
-  margin-top: 3px; 
+
+.btn1, .btn2 {
+    height: 100px;
 }
+
+
 .ifood {
-    padding-top: 3px;
+    width: 100px;
+    height: auto;
 }
-.rappi {
-    padding-top: 1px;
+.uber {
+    width: 100px;
+    height: auto;
 }
+
 
 
 
@@ -192,3 +202,4 @@ footer .logo {
     display: flex;
     justify-content: center;
 }
+

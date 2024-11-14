@@ -13,7 +13,7 @@
     padding: 0;
     margin: 0px;
     /* navegador passa a contar o padding e border do elemento */
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 body {
@@ -99,7 +99,6 @@ nav a:hover {
 /* title */
 .title{
     text-align: center;
-    /* margin-bottom: 60px; */
 }
 .title h4{
     text-transform: capitalize;
@@ -189,4 +188,65 @@ nav a:hover {
 .single-menu p {
     color: white;
     font-family: "poppins", sans-serif;
+}
+
+/* footer */
+
+footer {
+    background: #000;
+    padding: 9dvh;
+    margin-top: 5%;
+}
+footer h1 {
+    font-size: 4dvh;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.foot-logos {
+    line-height: 7.2dvh;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 9dvh;
+    padding-top: 7dvh;
+}
+.foot-logos a {
+    text-decoration: none;
+
+}
+
+footer .logo {
+    height: 7dvh;
+    float: left;
+}
+
+.info {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2.1dvh;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+}
+
+.copyright {
+    font-size: 2dvh;
+    display: flex;
+    justify-content: center;
+    padding-top: 3dvh;
+    color: #ffffffaa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bi {
+    cursor: pointer;
+}
+
+.bi-icon {
+    padding-right: 7dvh;
+}
+
+.media-icons {
+    display: flex;
+    justify-content: center;
 }

@@ -99,16 +99,16 @@ body {
     text-align: center;
     font-family: 'Poppins';
 }
-.poppins-light {
+/*.poppins-light {
     font-family: "Poppins";
     font-weight: 300;
     font-style: normal;
-  }
+  }*/
 
 #inicial {
     background: url(../img/mesa.jpg) no-repeat bottom;
     background-size: cover;
-    height: 100vh;
+    height: 70vh;
     color: #FFF;
     display: flex;
     flex-direction: column;
@@ -117,73 +117,69 @@ body {
 
 }
 
-#inicial img {
-    opacity: 1.0;
-}
-
 #inicial h2 {
-    font-size: 52px;
+    font-size: 36px;
     margin: 2%;
 }
-
 
 #reservar {
     background: #840b13;
     color: white;
-    width: 90%;
-    height: 110px;
-    border-radius:10px;
+    width: 80vw;
+    height: 18vh;
+    border-radius:8px;
     margin: -7.5vh auto 0vh;
     display: flex;
-    /* justify-content: space-evenly; */
     align-items: center;
-    border: none;
-    font-size: 20px;
+    justify-content: center;
+
+    /*border: none;
+    font-size: 20px;*/
 }
 
 #reservar div {
-    width: 27%;
+    width: 95%;
 }
 
 #reservar input[type="time"] {
-    width: 26%;
-    border-radius:8px;
+    width: 100px;
+    border-radius:9px;
     border: none;
     font-size: 20px;
     text-align: center;
     margin-bottom: 4px;
+    color: black;
 }
 
 #reservar input[type="date"] {
-    width: 69%;
-    border-radius:8px; 
+    width: 180px;
+    border-radius:9px; 
     font-size: 20px;
     text-align: center;
+    justify-content: space-around;
     border: none;
-}
-
-#label, select {
+    align-items: center;
     color: black;
 }
-.form-control {
-    padding: 20px;
-    margin-bottom: 4px;
-}
+
+/*#reservar input[type="text"] {
+    
+}*/
 
 #reservar input[type="submit"] {
     background: transparent;
     outline: none;
     border: none;
-    border-bottom: 1px solid white;
-    font-size: 16px;
-    color: white;
-    text-align: left;
+    color: red;
+    border-bottom: 2px solid rgb(60, 58, 61);
+    font-size: 18px;
 }
 
 #reservar h1 {
-    font-size: 23px;
+    font-size: 20px;
     text-transform: uppercase;  
 }
+
 
 
 #mesa {
@@ -229,40 +225,6 @@ body {
     transition: 0.2s;
 }
 
-label {
-    color: #FFF;
-}
 
-input {
-    color: rgb(15, 7, 7)
-   
-}
 
-footer {
-    background: #000;
-    padding: 9dvh;
-    z-index: 1;
-}
 
-footer h1 {
-    font-size: 4dvh;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.foot-logos {
-    line-height: 7.2dvh;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 9dvh;
-    padding-top: 7dvh;
-}
-
-footer .logo {
-    height: 7dvh;
-    float: left;
-}
-.media-icons {
-    display: flex;
-    justify-content: center;
-}

@@ -6,76 +6,102 @@ const { error } = require('console')
 
 server.use(express.static('public'))
 
-server.use(express.urlencoded({extended:true}))
+server.use(express.urlencoded({ extended: true }))
 
-// server.use(express.json());
+server.use(express.json());
 
-server.get('/', (req, res)=> {
+server.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './html/home.html'))
 });
-server.get('/menu', (req, res)=> {
+
+server.get('/menu', (req, res) => {
     res.sendFile(path.join(__dirname, './html/menu.html'))
 });
-server.get('/delivery', (req, res)=> {
+
+server.get('/menu-rodizio', (req, res) => {
+    res.sendFile(path.join(__dirname, './html/menu-rodizio.html'))
+});
+
+server.get('/delivery', (req, res) => {
     res.sendFile(path.join(__dirname, './html/delivery.html'))
 });
-server.get('/restaurantes', (req, res)=> {
+
+server.get('/restaurantes', (req, res) => {
     res.sendFile(path.join(__dirname, './html/restaurantes.html'))
 });
 
-server.get('/cadastro', (req, res)=> {
+server.get('/cadastro', (req, res) => {
     res.sendFile(path.join(__dirname, './html/cadastro.html'))
 });
 
-server.post('/cadastro', (req, res)=> {
+server.get('/sobre', (req, res) => {
+    res.sendFile(path.join(__dirname, './html/sobre.html'))
+});
+
+
+
+server.post('/cadastro', (req, res) => {
     res.sendFile(path.join(__dirname, './html/cadastro.html'))
 
     console.log(req.body);
 
-    const {email, senha} = req.body
+    const email = req.body.email;
+    const senha = req.body.senha;
 
+    const sqlSelect = 'SELECT * FROM clientes WHERE email = ?'
     const sql = 'INSERT INTO clientes (email, senha) VALUES (?,?)'
 
-    db.query(sql, [email, senha], (error, results) => {
-        if (error) {
-            console.log("Erro ao cadastrar.")
-            console.log(error)
+    db.query(sqlSelect, [email], (err, result) => {
+        if (err) {
+            console.log("Email não existe.")
+            console.log(err)
+        } if (result.length == 0) {
+            db.query(sql, [email, senha], (err, result) => {
+                if (err) {
+                    console.log("Erro ao cadastrar.")
+                    console.log(err)
+                } else {
+                console.log("Cadastro feito com sucesso!")
+                console.log(result)
+                }
+                res.redirect('/')
+            });
+        
         } else {
-            console.log("Cadastro feito com sucesso!")
-            console.log(results)
+            console.log("Usuário já cadastrado");
+            
+
         }
-    })
-    
-    res.redirect('/')
+    });
 });
 
-server.get('/login', (req, res)=> {
+server.get('/login', (req, res) => {
     res.sendFile(path.join(__dirname, './html/login.html'))
 });
 
-server.post('/login', (req, res)=> {
+server.post('/login', (req, res) => {
     res.sendFile(path.join(__dirname, './html/login.html'))
 
     console.log(req.body);
 
-    const {email, senha} = req.body
+    const { email, senha } = req.body
 
     const sql = 'SELECT * FROM clientes WHERE email = ? AND senha = ?'
 
     db.query(sql, [email, senha], (error, results) => {
-        if (error) {
-            console.log("Erro ao logar.")
-            console.log(error)
-        } else {
+        if (results = email && senha) {
             console.log("Login feito com sucesso!")
             console.log(results)
+        } else {
+            console.log("Erro ao logar")
+            console.log(error)
         }
     })
-    
+
     res.redirect('/')
 });
 
-server.get('/reservar', (req, res)=> {
+server.get('/reservar', (req, res) => {
     res.sendFile(path.join(__dirname, './html/reserva.html'))
 });
 // server.post('/reservar', (req, res)=> {
@@ -95,11 +121,11 @@ server.get('/reservar', (req, res)=> {
 //             console.log(results)
 //         }
 //     })
-    
+
 //     res.redirect('/reservar')
 // });
 
 
-server.listen(5000, ()=> {
+server.listen(5000, () => {
     console.log('Servidor rodando na porta 5000')
 })
