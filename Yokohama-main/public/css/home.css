@@ -75,6 +75,28 @@ nav a:hover {
     transition: .5s all;
 }
 
+.menu {
+    display: flex;
+    right: 0;
+    flex-direction: column;
+    position: absolute;
+    background: #310000c1;
+    height: auto;
+    max-width: 40dvh;
+    display: none;
+}
+
+.menu hr {
+    width: 30dvh;
+    display: flex;
+    align-self: center;
+}
+
+.menu li {
+    cursor: pointer;
+}
+
+
 
 /* slider principal */
 
