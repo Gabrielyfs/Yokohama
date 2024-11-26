@@ -47,7 +47,7 @@
 
         <main class="reserva-body">
             <div id="inicial">
-                <h2>Sabores e tradições que transportam você ao Japão</h2>
+                <h2>Sabores e tradições que transportam você ao Japão.</h2>
                 <br>
             </div>
 
@@ -56,21 +56,27 @@
                     <h1>Reservar</h1>
                 </div>
 
-                <form action="/reservar" method="post">
+                <form id="reservaForm" action="/reservar" method="post">
 
                     <section>
-                        <label for="restaurante">Restaurante: </label>
-                        <input type="text" id="text" placeholder="*Unidade mais próxima" name="text" required>
+                        <label for="restaurantes">Restaurante: </label>
+                        <input type="text" id="restaurantes" placeholder="*Unidade mais próxima" name="restaurantes"
+                            required>
                     </section>
 
                     <section>
                         <label for="data">Data: </label>
-                        <input type="date" id="data" placeholder="Enter email" name="data" required>
+                        <input type="date" id="data" name="data" required>
                     </section>
 
                     <section>
                         <label for="hora">Hora: </label>
                         <input type="time" id="hora" placeholder="Enter hora" name="hora" required>
+                    </section>
+                    
+                    <section>
+                        <label for="quantidade">Quantidade de pessoas: </label>
+                        <input type="number"  min="1"  id="quantidade" placeholder="1" name="quantidade" required>
                     </section>
 
                     <section>
@@ -88,29 +94,29 @@
             <div class="mesa-imagem">
                 <div class="mesas">
                     <img src="/img/mesa2.png" alt="">
-                    <h4>Mesa para duas pessoas</h4>
-    
+                    <h4>Mesa para 2 pessoas</h4>
+
                 </div>
 
                 <div class="mesas">
                     <img src="/img/mesa4.png" alt="">
-                    <h4>Mesa para quatro pessoas</h4>
-                    
+                    <h4>Mesa para 4 pessoas</h4>
+
                 </div>
 
                 <div class="mesas">
                     <img src="/img/mesa6.png" alt="">
-                    <h4>Mesa para seis pessoas</h4>
-                    
+                    <h4>Mesa para 6 pessoas</h4>
+
                 </div>
 
                 <div class="mesas">
                     <img src="/img/mesa10.png" alt="">
-                    <h4>Mesa para dez pessoas</h4>
-                    
+                    <h4>Mesa para 10 pessoas</h4>
+
                 </div>
 
-            
+
             </div>
         </div>
         <footer>
