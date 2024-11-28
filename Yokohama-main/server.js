@@ -74,7 +74,7 @@ server.post('/cadastro', (req, res) => {
 
             notifier.notify({
                 title: 'Cadastro realizado com sucesso!',
-                message: 'Bem-vindo ao nosso serviço. Agora, faça login para continuar.',
+                message: 'Bem-vindo ao nosso serviço. Agora, aproveite o nosso site.',
                 timeout: 5,
                 icon: imagePath,  // Definindo a imagem personalizada
                 sound: true       // Opção para emitir som na notificação (opcional)
@@ -186,7 +186,7 @@ server.post('/reservar', (req, res) => {
         }
 
         // Se não houver conflito, faz a inserção da reserva associada ao cliente logado
-        const sql = 'INSERT INTO reservas (restaurantes, data, hora, quantidade) VALUES (?, ?, ?, ?, ?)';
+        const sql = 'INSERT INTO reservas (restaurantes, data, hora, quantidade) VALUES (?, ?, ?, ?)';
         db.query(sql, [restaurantes, data, hora, quantidade], (error, results) => {
             if (error) {
                 console.log("Erro ao realizar a reserva.");
@@ -196,7 +196,6 @@ server.post('/reservar', (req, res) => {
                     icon: imagePath,
                     sound: true
                 });
-                return res.status(500).send("Erro ao realizar a reserva.");
             }
 
             console.log("Reserva feita com sucesso");
