@@ -1,0 +1,253 @@
+
+/* css -> cascading style sheets */
+/* elemento -> define como os dados sao apresentados no navegador */
+/* transform -> modifica o espaço coordenado do modelo de formatação CSS */
+/* container -> agrupa elementos, centraliza conteudos e define largura máxima para o conteúdo */
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0px;
+    /* navegador passa a contar o padding e border do elemento */
+    /* box-sizing: border-box; */
+}
+
+body {
+    background: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+
+}
+
+
+.navbar {
+    box-sizing: border-box;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    font-family: 'arial';
+}
+
+nav {
+    background: linear-gradient(90deg, #000000c1, #310000c1);
+    border-radius: 0 0 30px 30px;
+}
+
+.logos {
+    cursor: pointer;
+}
+
+.logoF {
+    height: 50px;
+    float: left;
+    margin-left: 80px;
+    margin-top: 1%;
+}
+
+.logoL {
+    font-size: 30px;
+    line-height: 80px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin-right: 50px;
+}
+
+nav a,
+label {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 30px;
+}
+
+nav li,
+a,
+ul {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: rgb(255, 0, 0);
+    transition: .5s all;
+}
+
+#atual {
+    color: rgb(255, 0, 0);
+}
+
+
+.wrapper {
+    width: 1200px;
+    margin: 100px auto;
+}
+/* title */
+.title{
+    text-align: center;
+}
+.title h4{
+    text-transform: capitalize;
+    font-size: 36px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    color: white;
+    margin-top: 100px;
+    margin-left: 550px;
+    text-transform: uppercase;
+    font-family: "poppins", sans-serif;
+
+}
+/* ::before -> inserir conteudo antes ou depois de um elemento*/
+.title h4::before{
+    position: absolute;
+    /* definir o conteudo de um elemento */
+    content:"";
+    width: 100px;
+    height: 2px;
+    background-color: rgb(128, 2, 2);
+    bottom: 0;
+    /* posição horizontal do elemento em relação a borda esquerda */
+    left: 50%;
+    /* centralizar um elemento dentro do seu contêiner pai*/
+    transform: translateX(-50%);
+}
+
+/* menu */
+
+.menu {
+    display: flex;
+    /* caso nao caiba na largura do container ele quebra elementos em multiplas linhas */
+    flex-wrap: wrap;
+    /* ocupa todo o espaço livre */
+    justify-content: space-between;
+}
+
+.single-menu {
+    /* define o tamanho inicial dos elementos */
+    flex-basis: 580px;
+    margin: bottom 40px;
+    margin-top: 25px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgb(63, 62, 62);
+    
+}
+/* :nth-child() -> seleciona um elemento (com base na sua posição) em relação aos outros dentro do elemento pai */
+.single-menu:nth-child(7),
+.single-menu:nth-child(8) {
+    border-bottom: 0;
+}
+.single-menu {
+    display: flex;
+    /* elementos flex serão direcionados em linha(row) */
+    flex-direction: row;
+    align-items: center;
+}
+
+/* hover (opicional) */
+/* .single-menu:hover img {
+    border-radius: 0;
+} */
+
+.single-menu img {
+    max-width: 180px;
+    margin-right: 30px;
+    border-radius: 50%;
+    border: 1px solid rgb(54, 53, 53);
+    padding: 3px;
+    width: 200px;
+    height: 200px;
+}
+
+.single-menu h4 {
+    /* controla a capitalização de um elemento (letras em maiusculo/minusculo) */
+    text-transform: capitalize;
+    font-size: 22px;
+    border-bottom: 1px dashed rgb(123, 18, 18);
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.single-menu p {
+    color: white;
+    font-family: "poppins", sans-serif;
+}
+
+/* footer */
+
+footer {
+    background: #000;
+    padding: 9dvh;
+    margin-top: 5%;
+}
+footer h1 {
+    font-size: 4dvh;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.foot-logos {
+    line-height: 7.2dvh;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 9dvh;
+    padding-top: 7dvh;
+}
+.foot-logos a {
+    text-decoration: none;
+
+}
+
+footer .logo {
+    height: 7dvh;
+    float: left;
+}
+
+.info {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2.1dvh;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+}
+
+.copyright {
+    font-size: 2dvh;
+    display: flex;
+    justify-content: center;
+    padding-top: 3dvh;
+    color: #ffffffaa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bi {
+    cursor: pointer;
+}
+
+.bi-icon {
+    padding-right: 7dvh;
+}
+
+.media-icons {
+    display: flex;
+    justify-content: center;
+}

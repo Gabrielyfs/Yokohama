@@ -1,0 +1,298 @@
+/*cabeçalho*/
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+}
+ 
+body {
+    background: url(../img/background.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    width: 99vw;
+    min-width: 100px;
+    font-family: 'Poppins';
+}
+
+
+body h1 {
+    top: 100px;
+}
+
+.navbar {
+    position: absolute;
+    top: auto;
+    font-family: 'Poppins';
+    width: 100%;
+    height: auto;
+    z-index: 1000;
+}
+
+nav {
+    background: linear-gradient(90deg, #000000c1, #310000c1);
+    border-radius: 0 0 30px 30px;
+}
+
+.logos {
+    cursor: pointer;
+}
+
+.logoF {
+    height: 50px;
+    float: left;
+    margin-left: 80px;
+    margin-top: 1%;
+}
+
+.logoL {
+    font-size: 30px;
+    line-height: 80px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin-right: 50px;
+}
+
+nav a, label {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 30px;
+}
+
+nav li, a, ul {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: rgb(255, 0, 0);
+    transition: .5s all;
+}
+
+#atual {
+    color:  rgb(255, 0, 0);
+}
+
+
+.reserva-body {
+    text-align: center;
+}
+
+/**/
+
+#inicial {
+    background: url(../img/mesa.jpg) no-repeat bottom;
+    background-size: cover;
+    height: 70vh;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#inicial h2 {
+    font-size: 40px;
+    margin: 2%;
+}
+
+#reservar {
+    background: #840b13;
+    color: white;
+    width: 89vw;
+    height: 17vh;
+    padding: 8vh;
+    border-radius:15px;
+    margin: -7.5vh auto 0vh;
+    align-items: center;
+}
+
+label {
+    font-size: 18px; 
+}
+
+#reservar form {
+    /*width: 95%;*/
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+
+#reservar input[type="time"] {
+    width: 100px;
+    border-radius:9px;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 4px;
+    color: black;
+}
+
+
+#reservar input[type="text"] {
+    width: 180px;
+    border-radius:1px; 
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    color: black;
+    padding: 4px;
+    border-radius:9px; 
+
+}
+
+
+#reservar input[type="date"] {
+    width: 180px;
+    border-radius:9px; 
+    font-size: 22px;
+    text-align: center;
+    justify-content: space-around;
+    border: none;
+    align-items: center;
+    color: black;
+}
+
+#reservar input[type="number"] {
+    width: 50px;
+    border-radius:3px;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 2px;
+    color: black;
+}
+
+#reservado {
+    background: #61161b;
+    border: 2px;
+    color: #FFF;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    padding: 15px;
+}
+
+#reservar h1 {
+    font-size: 22px;
+    text-transform: uppercase;  
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Nossas mesas */
+
+#mesa {
+    height: 300px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#mesa .mesa-imagem {
+    display: flex;
+    height: 190px;
+    
+}
+
+.mesas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 1%;
+    width: 290px;
+    
+}
+
+.mesas h6, h4, h1 {
+    font-weight: 400;
+}
+
+.mesas h4 {
+    font-size: 20px;
+}
+
+.mesas h5 {
+    font-size: 13px;
+}
+
+
+
+
+/*rodapé*/
+
+footer {
+    background: #000;
+    padding: 9dvh;
+    margin-top: 15%;
+  }
+  
+  footer h1 {
+    font-size: 4vh;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .foot-logos {
+    line-height: 7.2dvh;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 9dvh;
+    padding-top: 7dvh;
+  }
+  
+  footer .logo {
+    height: 7dvh;
+    float: left;
+  }
+  
+  .info {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2.1dvh;
+    font-family: 'poppins';
+  }
+  
+  .copyright {
+    font-size: 2dvh;
+    display: flex;
+    justify-content: center;
+    padding-top: 3dvh;
+    color: #ffffffaa;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .bi {
+    cursor: pointer;
+  }
+  
+  .bi-icon {
+    padding-right: 7dvh;
+  }
+  
+  .media-icons {
+    display: flex;
+    justify-content: center;
+  }
